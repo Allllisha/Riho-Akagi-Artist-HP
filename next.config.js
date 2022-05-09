@@ -1,6 +1,6 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+const config = {
+  images: {
+    domains: ['images.microcms-assets.io'],
+  },
 }
-
-module.exports = nextConfig
+module.exports = config
