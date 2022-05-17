@@ -5,24 +5,26 @@ import Link from "next/link";
 
 export interface Profile {
   children?: React.ReactNode;
+  Profile_jp: string[]
+  profile_photo?: string,
 }
 
-export default function Profile(abouts) {
+
+
+export default function Profile(abouts: Profile) {
   return (
     <div>
-      {abouts.Profile_jp.map((about) => {
+      {abouts.Profile_jp.map((about: string) => {
         return (
           <>
-            <div className={styles.section}>
-              <div className={styles.profile}></div>
-            </div>
+          <div className={styles.linebox}>
             <div className={styles.namebox}>
               <div className={styles.jpimage}>
                 <Image
-                  src={about.profile_photo.url}
+                  src={about.profile_photo2.url}
                   alt=""
-                  width={`${330}`}
-                  height={330}
+                  width={`${300}`}
+                  height={400}
                 />
               </div>
               <div className={styles.nametitle}>
@@ -34,16 +36,11 @@ export default function Profile(abouts) {
                     <h1>{about.name}</h1>
                   </div>
                   <div className={styles.linkname}>
-                  <Link
-                    href="/abouts/h37pyymxj"
-                    passHref
-                  >
-                   English
-                  </Link>
                   </div>
                 </div>
               </div>
             </div>
+            </div>  
             <div className={styles.aboutjp}>
               <p>{about.profile_jp}</p>
             </div>

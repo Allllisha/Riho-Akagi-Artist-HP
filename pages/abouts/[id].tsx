@@ -7,17 +7,15 @@ export default function ProfileId ({about}) {
   return (
     <>
       {console.log(about)}
-
-            <div className="section">
-              <div className="profile"></div>
-            </div>
+           <div className="linebox">
             <div className="namebox">
+              
               <div className="enimage">
               <Image
-                  src={about.profile_photo2.url}
+                  src={about.profile_photo.url}
                   alt=""
-                  width={`${300}`}
-                  height={400}
+                  width={`${330}`}
+                  height={330}
                 />
               </div>
               <div className="nametitle">
@@ -30,6 +28,7 @@ export default function ProfileId ({about}) {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
             <div className="aboutjp">
               <p>{about.profile_en}</p>
