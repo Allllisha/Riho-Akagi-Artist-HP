@@ -30,13 +30,27 @@ a {
   margin-top: 80px
 }
 
-.nametitle{
+.nametitle {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Noto Serif JP', serif;
+  font-family: "Noto Serif JP", serif;
   margin-left: 200px;
+  h1{
+    color: black;
+    @media screen and (max-width: 767px) {
+      h1{
+        color: black;
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+    margin-top: 80px;
+    color: black;
+  }
 }
+
 
 .aboutjp{
   font-family: 'Noto Serif JP', serif;
@@ -121,6 +135,7 @@ a {
 }
 
 .namebox{
+  margin-top: 50px;
   display: flex;
 }
 
@@ -139,27 +154,127 @@ a {
 
   h2{
     font-family: 'snellfont';
+    color: white;
+    @media screen and (max-width: 767px) {
+     color: black;
+    }
   }
 }
 
 .enimage{
   margin-left: 300px;
-  background-color: coral;
   padding-left: 70px;
   padding-top: 20px;
   padding-bottom: 30px;
   width: 320px;
+  object-fit: cover;
+
+  @media screen and (max-width: 767px) {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+
+    img {
+      width: 200px !important;
+      height: 200px !important;
+    }
+  }
+  img {
+    border-radius: 50%;
+  }
 }
 
 .nameen{
   h1{
     font-family: 'snellfont';
     margin-top: 10px;
+    color: white;
+  }
+  @media screen and (max-width: 767px) {
+    h1{color: black;
+    }
   }
 }
 
 .namejp{
   h1{
     margin-top: 10px;
+  }
+}
+
+.alllinks{
+
+  a{
+    color: black;
+  }
+
+  a:hover{
+   color: turquoise;
+  }
+  
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+.MuiSvgIcon-root {
+  fill: black!important;
+}
+
+.MuiAppBar-colorPrimary{
+  background-color: white!important;
+}
+
+.namebox {
+  margin-top: 50px;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
+
+
+.linebox {
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 200px;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 0 2px;
+    position: static;
+  }
+}
+
+.linebox p {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.linebox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(rgba(255, 255, 255,0.3),rgba(255, 255, 255, 0.387)),url("../public/nyflower.jpg");
+  object-fit: contain;
+  background-size: 100%;
+  transform: skewY(-7deg) translateY(-90px);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+
+  @media screen and (max-width: 767px) {
+    background-size: 100%;
   }
 }

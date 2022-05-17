@@ -1,35 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP&display=swap");
 
 @font-face {
-  font-family: 'snellfont';
-  src: url('../asset/SnellRoundhand-BlackScript.otf');
+  font-family: "snellfont";
+  src: url("../asset/SnellRoundhand-BlackScript.otf");
   font-weight: 400;
   font-style: normal;
-  }
-
-.profile{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 80px
 }
 
-.nametitle{
+.profile {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Noto Serif JP', serif;
+  margin-top: 80px;
+}
+
+.nametitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif JP", serif;
   margin-left: 200px;
+  h1{
+    color: white;
+  }
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+    margin-top: 80px;
+    h1{
+      color: black;
+    }
+  }
 }
 
-.aboutjp{
-  font-family: 'Noto Serif JP', serif;
+.aboutjp {
+  font-family: "Noto Serif JP", serif;
   margin-left: 300px;
   margin-right: 300px;
   margin-bottom: 100px;
   margin-top: 100px;
 
-  @media screen and (max-width: 767px) { 
+  @media screen and (max-width: 767px) {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 100px;
@@ -39,98 +49,153 @@
 .section {
   width: 100%;
   /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
-  -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
-      -ms-transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
-          transform: skew(0, -4.76deg) translateY(calc(50vw/-12));
+  -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+  -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
+  transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
   /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
-  min-height: calc(30vh - (110vw/-12));
-
+  min-height: calc(30vh - (110vw / -12));
 }
 
-.section:not(:last-child) *{
+.section:not(:last-child) * {
   -webkit-transform: skew(0);
-      -ms-transform: skew(0);
-          transform: skew(0) ;
-  margin-top: calc(50vw/-12);
+  -ms-transform: skew(0);
+  transform: skew(0);
+  margin-top: calc(50vw / -12);
 }
-  
+
 .section:last-child {
   position: relative;
   -webkit-transform: skew(0);
-      -ms-transform: skew(0);
-          transform: skew(0);
-  margin-top: calc(100vw/-12);
-  padding-top: calc(100vw/12);
+  -ms-transform: skew(0);
+  transform: skew(0);
+  margin-top: calc(100vw / -12);
+  padding-top: calc(100vw / 12);
   min-height: 100vh;
   z-index: -1;
 }
 
-
-
-.section:nth-child(1) {
-  background-color: #2B4141;
-}
-.section:nth-child(2) {
-  background-color: #0EB1D2;
-}
-.section:nth-child(3) {
-  background-color: #34E4EA;
-}
-.section:nth-child(4) {
-  background-color: #3e6f6b;
-}
-.section:nth-child(5) {
-  background-color: #b19f63;
-}
-
-.section{
+.section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-.jpimage{
- margin-left: 300px;
-  background-color: coral;
+.jpimage {
+  margin-left: 300px;
   padding-left: 50px;
   padding-top: 20px;
   padding-bottom: 40px;
   width: 360px;
+
+  @media screen and (max-width: 767px) {
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 40px;
+
+    img {
+      width: 150px !important;
+      height: 200px !important;
+    }
+  }
+
+  img {
+    border-radius: 50%;
+  }
 }
 
-.namebox{
+.namebox {
+  margin-top: 50px;
   display: flex;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }
 
-.pianist{
+.pianist {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-bottom: 30px;
-}
-
-.snellfont{
-  h1{
-    font-family: 'snellfont';
-  }
-  h2{
-    font-family: 'snellfont';
+  @media screen and (max-width: 767px) {
+   margin-bottom: 0px;
   }
 }
 
-.namejp{
-  h1{
+.snellfont {
+  h1 {
+    font-family: "snellfont";
+  }
+  h2 {
+    font-family: "snellfont";
+    color: white;
+
+    @media screen and (max-width: 767px) {
+      color: black;
+    }
+  }
+}
+
+.namejp {
+  h1 {
     margin-top: 10px;
   }
 }
 
-.linkname{
+.linkname {
   margin-top: 50px;
+  a {
+    color: rgb(235, 16, 158);
+  }
+}
+
+.linebox {
+  width: 100%;
+  margin: 0;
+  padding: 60px 0 200px;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 767px) {
+    padding: 20px 0 2px;
+    position: relative;
+  }
+}
+
+.linebox p {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.linebox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: radial-gradient(rgba(255, 255, 255,0.3),rgba(255, 255, 255, 0.387)),url("../public/sakura.jpg");
+  object-fit: contain;
+  background-size: 100%;
+  transform: skewY(-7deg) translateY(-90px);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+
+  @media screen and (max-width: 767px) {
+    background-size: 100%;
+  }
 }
