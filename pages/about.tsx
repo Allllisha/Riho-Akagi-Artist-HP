@@ -9,12 +9,17 @@ export interface Profile {
   profile_photo?: string,
 }
 
+export interface Info {
+  profile_photo2: string;
+  name: string;
+  profile_jp: string;
+}
 
 
 export default function Profile(abouts: Profile) {
   return (
     <div>
-      {abouts.Profile_jp.map((about: string) => {
+      {abouts.Profile_jp.map((about: Info) => {
         return (
           <>
           <div className={styles.linebox}>
