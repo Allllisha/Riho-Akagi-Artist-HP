@@ -5,6 +5,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { client } from "../libs/client";
 import Link from "next/link";
+import moment from "moment";
 
 import { Link as Scroll } from "react-scroll";
 
@@ -66,7 +67,7 @@ export default function Home(blogs) {
           </div>
         </div>
       </div>
-      <div className={styles.newsContainer}>
+      <div className={styles.slantbg}>
         <div className={styles.news}>
           <h1>News</h1>
           <h6>concert info / blogs</h6>
@@ -76,12 +77,38 @@ export default function Home(blogs) {
               return (
                 <div key={blog.id}>
                   <div className={styles.bloglist}>
+                    {moment(blog.date).format("LL")}{" "}
                     <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
                   </div>
                 </div>
               );
             })}
           </div>
+        </div>
+      </div>
+      <div className={styles.contactContainer}>
+        <div className={styles.contact}>
+          <h1>Contact</h1>
+          <h6>Lesson / Enquiry</h6>
+        </div>
+         <div className={styles.contacts}>
+        <div className={styles.contactA}>
+          <div className={styles.info}>
+            コロナ禍で大変な今ですが、ピアノを弾いてひとつ楽しみを増やしませんか？楽しむことを第一にイギリスはロンドンで学んだ1人1人の個性を活かす音楽をシェアさせていただきます。
+            この度、オンラインレッスンを開講します。日本語、英語どちらとも可能です。
+            また、歌曲などの伴奏録音も承ります。
+            ※オンラインレッスンはキーボードまたはピアノがお家にある方/ピアノのある環境ができる方のみ受講可能とさせて頂きます。
+             詳しい詳細についてはお問い合わせ下さい。 
+            私のオンライン接続先は静岡県(日本)またはロンドン(イギリス)になります。
+            I would like to announce the offer of virtual piano lessons and
+            piano accompaniment recordings !! you can take a lesson any time as
+            you want at home! I connect from in Shizuoka(Japan) / London(UK)
+            Please feel free to contact me anytime !! contactrihoakagi@gmail.com
+            </div>
+        </div>
+        <div className={styles.contactB}>
+        <h1>Form</h1>
+        </div>
         </div>
       </div>
     </>

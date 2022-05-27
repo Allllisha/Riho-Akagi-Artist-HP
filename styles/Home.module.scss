@@ -239,16 +239,25 @@
     flex-direction: column;
     align-items: center;
 
+
     h6{
       padding-bottom: 30px;
     }
   }
 
   img{
-    height: 350px!important;
+    height: 320px!important;
     width: 300px!important;
     object-fit: cover;
     border-radius: 30px;
+
+    @media (max-width: 600px) {
+      img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    } 
   }
 }
 
@@ -258,9 +267,18 @@
   
 }
 
+@media (max-width: 600px) {
+  .allabout {
+    display: block;
+
+  }
+} 
+
 .allintro{
   width: 300px;
   margin: 50px;
+
+  
 
  p{
   font-family: 'Archivo', sans-serif;
@@ -291,4 +309,58 @@
   a{
     text-decoration: underline;
   }
+}
+
+.slantbg {
+  height: 80vh;
+  width: 100%;
+  padding: 150px 0;
+  clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 9vw), 0 100%);
+  background-color: #F1C122;
+}
+
+.slantbg p {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.slantbg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #D1E28A;
+  transform: skewY(-7deg) translateY(90px);
+  z-index: -1;
+}
+
+.contactContainer{
+  height: 100vh;
+}
+
+.contact{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacts{
+  display: flex;
+}
+
+.contactA{
+  width: 50%;
+}
+
+.contactB{
+  background-color: #0070f3;
+  width: 50%;
+}
+
+.info{
+  margin: 80px;
 }
