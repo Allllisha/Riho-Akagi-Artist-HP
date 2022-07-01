@@ -1,6 +1,7 @@
 import { client } from "../../libs/client";
 import Image from "next/image";
-
+import moment from "moment";
+import London from "../../public/london.png";
 
 
 export default function ProfileId ({about}) {
@@ -33,6 +34,10 @@ export default function ProfileId ({about}) {
             <div className="aboutjp">
               <p>{about.profile_en}</p>
             </div>
+            
+     <Image src={London} alt=""
+     id="london"
+      />
     </>
   );
 }
