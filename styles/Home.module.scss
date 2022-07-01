@@ -227,7 +227,7 @@
   height: 100vh;
 
   @media (max-width: 600px) {
-    height: 165vh;
+    height: 110vh;
   }
 
   .introduction{
@@ -348,6 +348,10 @@
   padding: 150px 0;
   clip-path: polygon(0 0, 100% calc(0% + 5vw), 100% calc(100% - 9vw), 0 100%);
   background-color: #F1C122;
+
+  @media (max-width: 600px) {
+    height: 90vh;
+   } 
 }
 
 .slantbg p {
