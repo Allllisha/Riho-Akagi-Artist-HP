@@ -2,6 +2,7 @@ import { client } from "../libs/client";
 import Image from "next/image";
 import styles from "../styles/about.module.scss";
 import Link from "next/link";
+import Sakura from "../public/sakurajp.png";
 
 export interface Profile {
   children?: React.ReactNode;
@@ -18,8 +19,8 @@ export interface Info {
 
 export default function Profile(abouts: Profile) {
   return (
-    <div>
-      {abouts.Profile_jp.map((about: Info) => {
+    <div >
+      {abouts.Profile_jp.map((about: any) => {
         return (
           <>
           <div className={styles.linebox}>
@@ -52,6 +53,9 @@ export default function Profile(abouts: Profile) {
           </>
         );
       })}
+         <Image src={Sakura} alt=""
+     id="london"
+      />
     </div>
   );
 }

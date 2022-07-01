@@ -56,7 +56,7 @@ const HeaderDrawer = (props) => {
       </div>
       <Divider />
       <List>
-        {drawerItem.map((item: string, index: number) => (
+        {drawerItem.map((item: any, index: any) => (
           <div className="alllinks" key={index}>
        <li ><Link href={item.path}
        passHref>{item.label}</Link></li>

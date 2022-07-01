@@ -1,11 +1,15 @@
 import Head from "next/head";
 import Arrow from "../public/arrow.png";
 import Riho from "../public/riho.jpg";
+import Flower from "../public/1.png";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import { client } from "../libs/client";
 import Link from "next/link";
 import moment from "moment";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import "bootstrap/dist/css/bootstrap.css";
 
 import { Link as Scroll } from "react-scroll";
 
@@ -49,9 +53,7 @@ export default function Home(blogs) {
           <h1>About</h1>
           <h6>My introduction</h6>
           <div className={styles.allabout}>
-            <div>
               <Image src={Riho} alt="" />
-            </div>
             <div className={styles.allintro}>
               <p>
                 Hello! Aloha!☀️ Welcome and Thank you very much for stopping by
@@ -91,26 +93,53 @@ export default function Home(blogs) {
           <h1>Contact</h1>
           <h6>Lesson / Enquiry</h6>
         </div>
-         <div className={styles.contacts}>
-        <div className={styles.contactA}>
-          <div className={styles.info}>
-            コロナ禍で大変な今ですが、ピアノを弾いてひとつ楽しみを増やしませんか？楽しむことを第一にイギリスはロンドンで学んだ1人1人の個性を活かす音楽をシェアさせていただきます。
-            この度、オンラインレッスンを開講します。日本語、英語どちらとも可能です。
-            また、歌曲などの伴奏録音も承ります。
-            ※オンラインレッスンはキーボードまたはピアノがお家にある方/ピアノのある環境ができる方のみ受講可能とさせて頂きます。
-             詳しい詳細についてはお問い合わせ下さい。 
-            私のオンライン接続先は静岡県(日本)またはロンドン(イギリス)になります。
-            I would like to announce the offer of virtual piano lessons and
-            piano accompaniment recordings !! you can take a lesson any time as
-            you want at home! I connect from in Shizuoka(Japan) / London(UK)
-            Please feel free to contact me anytime !! contactrihoakagi@gmail.com
+        <div className={styles.contacts}>
+          <div className={styles.contactA}>
+
+            <div className={styles.info}>
+            <div className="fluid">
+              <p>
+              コロナ禍で大変な今ですが、ピアノを弾いてひとつ楽しみを増やしませんか？楽しむことを第一にイギリスはロンドンで学んだ1人1人の個性を活かす音楽をシェアさせていただきます。
+              この度、オンラインレッスンを開講します。日本語、英語どちらとも可能です。
+              また、歌曲などの伴奏録音も承ります。
+              ※オンラインレッスンはキーボードまたはピアノがお家にある方/ピアノのある環境ができる方のみ受講可能とさせて頂きます。
+              詳しい詳細についてはお問い合わせ下さい。
+              私のオンライン接続先は静岡県(日本)またはロンドン(イギリス)になります。
+              I would like to announce the offer of virtual piano lessons and
+              piano accompaniment recordings !! you can take a lesson any time
+              as you want at home! I connect from in Shizuoka(Japan) /
+              London(UK) Please feel free to contact me anytime !!
+              contactrihoakagi@gmail.com
+              </p>
+              </div>
             </div>
-        </div>
-        <div className={styles.contactB}>
-        <h1>Form</h1>
-        </div>
+          </div>
+          <div className={styles.contactB}>
+            <Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Name</Form.Label>
+                <Form.Control type="name" placeholder="Name" />
+                <Form.Text className="text-muted"></Form.Text>
+              </Form.Group>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" />
+                <Form.Text className="text-muted"></Form.Text>
+              </Form.Group>
+              <div className="commentForm">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Label>Comments</Form.Label>
+                  <Form.Control type="text" placeholder="comments" />
+                </Form.Group>
+              </div>
+              <Button variant="primary" type="submit" id="btn-red">
+                Submit
+              </Button>
+            </Form>
+          </div>
         </div>
       </div>
+      <Image src={Flower} alt="" />
     </>
   );
 }
