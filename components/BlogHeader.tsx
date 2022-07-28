@@ -10,8 +10,8 @@ export default  function BlogHeader(){
         height={250}
        />
       </div>
-      <h1>Riho blog</h1>
-      <p>concert info and blog</p>
+      <h1>Concert Info</h1>
+      <p>Riho Akagi Official</p>
     </div>
   )
 }

@@ -33,7 +33,7 @@ const drawerItem = [
   { label: 'Home', path: '/' },
   { label: 'About(JP)', path: '/about' },
   { label: 'About(EN)', path: 'abouts/h37pyymxj' },
-  { label: 'News/Blog', path: '/blogs' },
+  { label: 'News', path: '/blogs' },
 ];
 
 const Header = () => {

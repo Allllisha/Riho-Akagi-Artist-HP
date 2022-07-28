@@ -141,18 +141,22 @@
 }
 .slider .image:nth-of-type(2) {
   animation-delay: 5s;
-  background-image: url("../public/sea.jpg");
+  background-image: url("../public/london.jpg");
 }
 .slider .image:nth-of-type(3) {
   animation-delay: 10s;
-  background-image: url("../public/london.jpg");
+  background-image: url("../public/mtfuji.jpg");
+}
+.slider .image:nth-of-type(4) {
+  animation-delay: 15s;
+  background-image: url("../public/hawaii.jpg");
 }
 
 .slider .image {
   animation-name: anime;
   animation-delay: 0;
   animation-iteration-count: infinite;
-  animation-duration: 15s;
+  animation-duration: 19s;
 }
 
 @keyframes anime {

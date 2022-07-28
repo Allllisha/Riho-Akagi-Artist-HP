@@ -27,6 +27,7 @@ export default function Home(blogs) {
             <div className={styles.image}></div>
             <div className={styles.image}></div>
             <div className={styles.image}></div>
+            <div className={styles.image}></div>
             <div className={styles.boxString}>
               <div className={styles.indexName}>
                 <h3>Pianist</h3>
@@ -56,14 +57,14 @@ export default function Home(blogs) {
               <Image src={Riho} alt="" />
             <div className={styles.allintro}>
               <p>
-                Hello! Aloha!☀️ Welcome and Thank you very much for stopping by
+                Hello! Welcome and Thank you very much for stopping by
                 my hp! I think you already know about my musical life. In this
                 page, I would like to share my hobbies, interests and lifestyle
                 about myself...I have been living in London since 2017. I have
                 been thinking more about myself in the last few years and that
                 was a big theme. I would like to write down someday.and how I
-                did change a life....anyway hope you enjoy this hp!! Have a nice
-                day !!
+                did change a life....anyway hope you enjoy this hp!! Have a lovely
+                day !! Aloha!☀️ 
               </p>
             </div>
           </div>
@@ -72,7 +73,7 @@ export default function Home(blogs) {
       <div className={styles.slantbg}>
         <div className={styles.news}>
           <h1>News</h1>
-          <h6>concert info / blogs</h6>
+          <h6>concert info</h6>
 
           <div className={styles.blogContainer}>
             {blogs.blogs.map((blog: any) => {
