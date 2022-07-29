@@ -7,7 +7,8 @@ import Link from "next/link";
 
 export default function BlogId({ blog }) {
   return (
-    <div className="article">
+    <>
+    <div className="article bg-news">
     <BlogHeader></BlogHeader>
     <main>
     <div className="line"></div>
@@ -38,6 +39,7 @@ export default function BlogId({ blog }) {
      </Link>
      </div>
     </div>
+    </>
   );
 }
 

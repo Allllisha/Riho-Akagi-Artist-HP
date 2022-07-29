@@ -20,7 +20,7 @@ export default  function Footer(){
             <li> <Link href={`/`}>Home</Link></li>
             <li> <Link href={`/about`}>About JP</Link></li>
             <li> <Link href={`/abouts/h37pyymxj`}>About EN</Link></li>
-            <li> <Link href={`/blogs`}>News/Blog</Link></li>
+            <li> <Link href={`/blogs`}>News</Link></li>
           </ul>
         </div>
 
