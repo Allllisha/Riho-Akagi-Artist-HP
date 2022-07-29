@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function AllBlogs(blogs) {
   return (
-    <div>
+    <div className="bg-news">
       <BlogHeader></BlogHeader>
       <div className="line"></div>
       <div className="allimages-container">
