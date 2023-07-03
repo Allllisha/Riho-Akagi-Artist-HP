@@ -31,8 +31,8 @@ const useStyles = makeStyles((theme) =>
 
 const drawerItem = [
   { label: 'Home', path: '/' },
-  { label: 'About(JP)', path: '/about' },
-  { label: 'About(EN)', path: 'abouts/h37pyymxj' },
+  { label: 'About JP', path: '/about' },
+  { label: 'About EN', path: 'abouts/h37pyymxj' },
   { label: 'News', path: '/blogs' },
 ];
 
