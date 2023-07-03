@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;500;600;700;800&display=swap');
 
 @font-face {
   font-family: "snellfont";
@@ -22,13 +23,13 @@
   font-family: "Noto Serif JP", serif;
   // margin-left: 200px;
   h1{
-    color: black;
+    color: #262626;
   }
   @media screen and (max-width: 767px) {
     margin-left: 0px;
     margin-top: 80px;
     h1{
-      color: black;
+      color: #262626;
     }
   }
 }
@@ -46,73 +47,7 @@
   }
 }
 
-// .section {
-//   width: 100%;
-//   /*   skew adds a 4.76 degree slope and the translateY equation is based on the fact that a 4.76 degree slope has a gradient of 1:12 */
-//   -webkit-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
-//   -ms-transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
-//   transform: skew(0, -4.76deg) translateY(calc(50vw / -12));
-//   /*   And finally we account for the slope to make sure each section can occupy the full window... I added 10vw just to give it a little extra padding */
-//   min-height: calc(30vh - (110vw / -12));
-// }
 
-// .section:not(:last-child) * {
-//   -webkit-transform: skew(0);
-//   -ms-transform: skew(0);
-//   transform: skew(0);
-//   margin-top: calc(50vw / -12);
-// }
-
-// .section:last-child {
-//   position: relative;
-//   -webkit-transform: skew(0);
-//   -ms-transform: skew(0);
-//   transform: skew(0);
-//   margin-top: calc(100vw / -12);
-//   padding-top: calc(100vw / 12);
-//   min-height: 100vh;
-//   z-index: -1;
-// }
-
-// .section {
-//   display: -webkit-box;
-//   display: -ms-flexbox;
-//   display: flex;
-//   -webkit-box-align: center;
-//   -ms-flex-align: center;
-//   align-items: center;
-//   -webkit-box-pack: center;
-//   -ms-flex-pack: center;
-//   justify-content: center;
-// }
-
-// .jpimage {
-//   margin-left: 300px;
-//   padding-left: 50px;
-//   padding-top: 20px;
-//   padding-bottom: 40px;
-//   width: 360px;
-
-//   @media screen and (max-width: 767px) {
-//     margin: 0px;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     padding-left: 0px;
-//     padding-top: 0px;
-//     padding-bottom: 40px;
-
-//     img {
-//       width: 150px !important;
-//       height: 200px !important;
-//     }
-//   }
-
-//   img {
-//     border-radius: 50%;
-//   }
-// }
 
 .namebox {
   padding-top: 117px;
@@ -141,19 +76,34 @@
   }
   h2 {
     font-family: "snellfont";
-    color: black;
+    color: #262626;
 
     @media screen and (max-width: 767px) {
-      color: black;
+      color: #262626;
     }
   }
 }
 
 .namejp {
   h1 {
+    color: #262626;
     margin-top: 10px;
     font-size: 40px;
     font-weight: bold;
+  }
+}
+
+.nameen {
+  margin-top: 10px;
+  h1 {
+    color: #262626;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: 'Shippori Mincho B1', serif;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -164,23 +114,7 @@
   }
 }
 
-// .linebox {
-//   width: 100%;
-//   margin: 0;
-//   padding: 60px 0 200px;
-//   position: relative;
-//   overflow: hidden;
 
-//   @media screen and (max-width: 767px) {
-//     padding: 20px 0 2px;
-//     position: relative;
-//   }
-// }
-
-// .linebox p {
-//   width: 65%;
-//   margin: 0 auto;
-// }
 
 .linebox::before {
   content: "";
@@ -191,6 +125,29 @@
   left: 0;
   right: 0;
   background-image: url("../public/profilejp_top.png");
+  object-fit: cover;
+  background-size: 100%;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+
+  @media screen and (max-width: 767px) {
+    background-size: 100%;
+    height: 400px;
+  }
+}
+
+.lineboxen::before {
+  content: "";
+  height: 445px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../public/profileen_top.png");
   object-fit: cover;
   background-size: 100%;
   z-index: -1;
