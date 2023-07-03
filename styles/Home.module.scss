@@ -434,6 +434,18 @@ input {
     margin-right: auto;
     font-weight: lighter;
   }
+
+  @media screen and (max-width: 767px) {
+    padding-top: 68px;
+    margin-bottom: 69px;
+    p {
+      font-size: 25px;
+      font-family: "snellfont";
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: lighter;
+    }
+  }
 }
 
 .lesson {
@@ -480,10 +492,14 @@ input {
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 16px;
     }
+
+    @media screen and (max-width: 767px) {
+      max-width: 300px;
+    }
   }
 
   .lesson_explain_b {
-    min-width: 506px;
+    // min-width: 506px;
     margin-top: 30px;
     margin-bottom: 30px;
     p {
@@ -492,10 +508,20 @@ input {
       text-align: left;
       font-size: 16px;
     }
+
+    @media screen and (max-width: 767px) {
+      min-width: none;
+      p {
+
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+      }
+    }
   }
 
   .lesson_explain_c {
-    min-width: 506px;
+    // min-width: 506px;
     margin-bottom: 30px;
     p {
       font-weight: 300;
@@ -503,17 +529,34 @@ input {
       text-align: left;
       font-size: 16px;
     }
+
+    @media screen and (max-width: 767px) {
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+      }
+    }
   }
 
   .lesson_explain_d {
     max-width: 506px;
-    margin-bottom: 30px;
     p {
       font-weight: 300;
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 16px;
     }
     margin-bottom: 259px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: none;
+    p {
+      font-size: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+    }
   }
 
 }

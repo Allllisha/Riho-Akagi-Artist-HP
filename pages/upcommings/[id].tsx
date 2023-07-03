@@ -12,6 +12,7 @@ export default function BlogId({ upcomming }) {
     <div className="article bg-news2">
     <BlogHeader></BlogHeader>
     <main>
+
     <div className="line"></div>
       <div className="blogdate">
         <p>{moment(upcomming.date).format("LLLL")}{" "}</p>
@@ -36,12 +37,14 @@ export default function BlogId({ upcomming }) {
         }}
       />
       </div>
-    </main>
     <div className="backToHome">
     <Link href={`/upcommings/`}>
      <h6>Back to Gallary</h6>
      </Link>
+
+
      </div>
+     </main>
     </div>
     </>
   );

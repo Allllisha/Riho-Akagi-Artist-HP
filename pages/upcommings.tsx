@@ -3,13 +3,13 @@ import Link from "next/link";
 import moment from "moment";
 import BlogHeader from "../components/BlogHeader";
 import Image from "next/image";
-import WHITE from "../public/whitedeco.png";
+import RED from "../public/reddeco.png";
 
 export default function AllBlogs(upcommings) {
   return (
     <div className="bg-news">
       <div className="gallery__top"><h2>Gallary</h2>
-      <Image src={WHITE} 
+      <Image src={RED} 
           alt=""
            />
       </div>
