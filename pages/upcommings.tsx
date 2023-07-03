@@ -3,29 +3,34 @@ import Link from "next/link";
 import moment from "moment";
 import BlogHeader from "../components/BlogHeader";
 import Image from "next/image";
+import WHITE from "../public/whitedeco.png";
 
-export default function AllBlogs(blogs) {
+export default function AllBlogs(upcommings) {
   return (
     <div className="bg-news">
-      <BlogHeader></BlogHeader>
-      <div className="line"></div>
+      <div className="gallery__top"><h2>Gallary</h2>
+      <Image src={WHITE} 
+          alt=""
+           />
+      </div>
       <div className="allimages-container">
-        {blogs.blogs.map((blog: any) => {
+        {upcommings.upcommings.map((upcomming: any) => {
+          console.log(upcommings)
           return (
             <>
-              <div key={blog.id} className="allimages">
-                <Link href={`/blogs/${blog.id}`}>
+              <div key={upcomming.id} className="allimages">
+                <Link href={`/upcommings/${upcomming.id}`}>
                   <div className="sample1">
                     <Image
-                      src={blog.eyecatch.url}
+                      src={upcomming.eyecatch.url}
                       alt=""
                       width={300}
                       height={300}
                     />
                     <div className="mask">
                       <div className="caption">
-                        {moment(blog.date).format("LL")}{" "}
-                        <p>{blog.title}</p>
+                        {moment(upcomming.date).format("LL")}{" "}
+                        <p>{upcomming.title}</p>
                       </div>
                     </div>
                   </div>
@@ -40,11 +45,11 @@ export default function AllBlogs(blogs) {
 }
 
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" });
-
+  const data = await client.get({ endpoint: "upcommings" });
+   console.log(data);
   return {
     props: {
-      blogs: data.contents,
+      upcommings: data.contents,
     },
   };
 };

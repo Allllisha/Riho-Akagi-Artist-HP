@@ -3,6 +3,7 @@ import Arrow from "../public/arrow.png";
 import TOP from "../public/home_top.png";
 import Riho from "../public/riho.jpg";
 import RED from "../public/reddeco.png";
+import BLACK from "../public/blackdeco.png";
 import Flower from "../public/1.png";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
@@ -15,7 +16,7 @@ import "bootstrap/dist/css/bootstrap.css";
 
 import { Link as Scroll } from "react-scroll";
 
-export default function Home(blogs) {
+export default function Home(upcommings) {
   return (
     <div className={styles.main_container}>
       <div className={styles.container}>
@@ -25,34 +26,30 @@ export default function Home(blogs) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.hero}>
-          {/* <div className={styles.slider}>
-            <div className={styles.image}></div>
-            <div className={styles.image}></div>
-            <div className={styles.image}></div>
-            <div className={styles.image}></div>
-            <div className={styles.boxString}>
-              <div className={styles.indexName}>
-                <h3>Pianist</h3>
-                <div className={styles.indexAllName}>
-                  <div className={styles.firstname}>
-                    <h1>Riho</h1>
-                  </div>
-                  <div className={styles.lastname}>
-                    <h1>Akagi</h1>
-                  </div>
-                </div>
-                <div className={styles.blink}>
-                  <Scroll to="concept">
-                    <Image src={Arrow} alt="" />
-                  </Scroll>
-                </div>
-              </div>
-            </div>
-          </div> */}
           <Image src={TOP} 
           alt=""
            />
         </div>
+      </div>
+
+      <div className={styles.upcomming}>
+      <p>Upcomming</p>
+            <Image src={BLACK} 
+          alt=""
+           />
+          <div className={styles.blogContainer}>
+            {upcommings.upcommings.map((upcomming: any) => {
+              return (
+                <div key={upcomming.id}>
+                  <div className={styles.bloglist}>
+                    {moment(upcomming.date).format("LL")}{" "}
+                    <Link href={`/upcommings/${upcomming.id}`}>{upcomming.title}</Link>
+                  </div>
+                </div>
+                
+              );
+            })}
+          </div>
       </div>
 
           <div className={styles.lesson}>
@@ -157,11 +154,11 @@ export default function Home(blogs) {
 }
 
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" });
+  const data = await client.get({ endpoint: "upcommings" });
 
   return {
     props: {
-      blogs: data.contents,
+      upcommings: data.contents,
     },
   };
 };

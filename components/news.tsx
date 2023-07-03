@@ -1,13 +1,13 @@
 import { client } from "../libs/client";
 import Link from "next/link";
 
-export default function News({ blogs }){
+export default function News({ upcommings}){
   return (
     <div>
-      {blogs.map((blog: any)=>{
+      {upcommings.map((upcomming: any)=>{
        return(
-         <div key={blog.id}>
-           <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
+         <div key={upcomming.id}>
+           <Link href={`/upcommings/${upcomming.id}`}>{upcomming.title}</Link>
          </div>
        )
       })}
@@ -16,11 +16,11 @@ export default function News({ blogs }){
 }
 
 export const getStaticProps = async () => {
-  const data = await client.get({ endpoint: "blogs" });
+  const data = await client.get({ endpoint: "upcommings" });
 
   return {
     props: {
-      blogs: data.contents,
+      upcommings: data.contents,
     },
   };
 };

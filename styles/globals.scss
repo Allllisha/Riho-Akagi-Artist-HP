@@ -268,37 +268,40 @@ a {
   margin: 0 auto;
 }
 
-.linebox::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-image: radial-gradient(rgba(255, 255, 255,0.3),rgba(255, 255, 255, 0.387)),url("../public/nyflower.jpg");
-  object-fit: contain;
-  background-size: 100%;
-  transform: skewY(-7deg) translateY(-90px);
-  z-index: -1;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+// .linebox::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   background-image: radial-gradient(rgba(255, 255, 255,0.3),rgba(255, 255, 255, 0.387)),url("../public/nyflower.jpg");
+//   object-fit: contain;
+//   background-size: 100%;
+//   transform: skewY(-7deg) translateY(-90px);
+//   z-index: -1;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: cover;
 
 
-  @media screen and (max-width: 767px) {
-    background-size: 100%;
-  }
-}
+//   @media screen and (max-width: 767px) {
+//     background-size: 100%;
+//   }
+// }
 
 .blogTittle {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
-
+  margin-bottom: 50px;
 
   h1{
-    color: white;
+    color: #262626;
+    font-family: "Playfair Display", serif;
     font-size: 20px;
+    padding-bottom: 10px;
     @media screen and (max-width: 767px) {
       font-size: 15px;
     }
@@ -328,6 +331,10 @@ a {
 }
 
 .blogContent{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 90px;
+ max-width: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,10 +357,10 @@ a {
   font-family: 'snellfont';
   flex-direction: column;
   font-size: 30px;
-  padding-top: 400px;
 
   h1{
-    color: black;
+    font-size: 40px;
+    color: #262626;
   }
 
   @media screen and (max-width: 767px) {
@@ -365,13 +372,19 @@ a {
   }
 
   p{
+    margin-top: 20px!important;
     font-size: 15px;
-    color: black;
+    color: #262626;
+    font-family: "Playfair Display", serif;
   }
 }
 
 .notes{
   object-fit: cover;
+
+  p {
+    margin-top: 10px;
+  }
 
 }
 
@@ -380,11 +393,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  color: black;
+  color: #262626;
+  font-family: "Playfair Display", serif;
 
   @media screen and (max-width: 767px) {
     margin-top: 100px;
-    color: rgb(210, 50, 122);
+    color: #262626;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -419,7 +433,7 @@ a {
   color: black;
 
 h6:hover{
-  color: rgba(251, 255, 0, 0.981);
+  color: #262626;
 }  
 
   @media screen and (max-width: 767px) {
@@ -428,7 +442,7 @@ h6:hover{
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
-    color: rgb(210, 50, 122);
+    color: #262626;
   }
 }
 
@@ -470,7 +484,9 @@ h6:hover{
 	padding-top:		100px;
 	color:			#fff;
 
+
   p{
+    font-family: "Noto Serif JP", serif;
     margin-top: 30px;
   }
 }
@@ -766,13 +782,14 @@ h6:hover{
 }
 
 .bg-news{
-  background-image: url("../public/redbg.jpg");
+  padding-top: 122px;
+  background-image: url("../public/gallary_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 
   @media screen and (max-width: 767px) {
-    background-image: url("../public/redbg.jpg");
+    background-image: url("../public/gallary_bg.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -780,3 +797,35 @@ h6:hover{
   }
 }
 
+
+.bg-news2{
+  padding-top: 122px;
+  background-image: url("../public/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../public/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: rgb(49, 48, 48);
+  }
+}
+
+
+.gallery__top {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "snellfont";
+  flex-direction: column;
+
+h2 {
+  font-size: 32px;
+  margin-top: 5px;
+  padding-bottom: 3px;
+}
+}

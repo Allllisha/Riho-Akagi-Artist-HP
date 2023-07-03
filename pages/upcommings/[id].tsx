@@ -3,24 +3,28 @@ import Image from "next/image";
 import moment from "moment";
 import BlogHeader from "../../components/BlogHeader"
 import Link from "next/link";
+import RED from "../../public/reddeco.png";
 
 
-export default function BlogId({ blog }) {
+export default function BlogId({ upcomming }) {
   return (
     <>
-    <div className="article bg-news">
+    <div className="article bg-news2">
     <BlogHeader></BlogHeader>
     <main>
     <div className="line"></div>
       <div className="blogdate">
-        <p>{moment(blog.date).format("LLLL")}{" "}</p>
+        <p>{moment(upcomming.date).format("LLLL")}{" "}</p>
       </div>
       <div className="blogTittle">
-      <h1>{blog.title}</h1>
+      <h1>{upcomming.title}</h1>
+      <Image src={RED} 
+          alt=""
+           />
       </div>
       <div className="blogCatch">
         <Image
-         src={blog.eyecatch.url}
+         src={upcomming.eyecatch.url}
           alt=""
           width={`${800}`}
           height={500} />
@@ -28,14 +32,14 @@ export default function BlogId({ blog }) {
       <div className="blogContent">
       <div
         dangerouslySetInnerHTML={{
-          __html: `${blog.content}`,
+          __html: `${upcomming.content}`,
         }}
       />
       </div>
     </main>
     <div className="backToHome">
-    <Link href={`/blogs/`}>
-     <h6>Back to blogs</h6>
+    <Link href={`/upcommings/`}>
+     <h6>Back to Gallary</h6>
      </Link>
      </div>
     </div>
@@ -46,19 +50,19 @@ export default function BlogId({ blog }) {
 
 
 export const getStaticPaths = async () => {
-  const data = await client.get({ endpoint: "blogs" });
+  const data = await client.get({ endpoint: "upcommings" });
 
-  const paths = data.contents.map((content: any) => `/blogs/${content.id}`);
+  const paths = data.contents.map((content: any) => `/upcommings/${content.id}`);
   return { paths, fallback: false };
 };
 
 export const getStaticProps = async (context: any) => {
   const id = context.params.id;
-  const data = await client.get({ endpoint: "blogs", contentId: id });
+  const data = await client.get({ endpoint: "upcommings", contentId: id });
 
   return {
     props: {
-      blog: data,
+      upcomming: data,
     },
   };
 };

@@ -294,6 +294,8 @@
 .bloglist{
   margin: 10px;
   a{
+    
+    font-family: 'Noto Serif JP', serif;
     text-decoration: underline;
     color: blueviolet;
 
@@ -304,6 +306,10 @@
 
      }
     }
+  }
+
+  a:hover {
+    color: rgb(68, 22, 111);
   }
 
   @media (max-width: 600px) {
@@ -411,7 +417,24 @@ input {
 
 }
 
-
+.upcomming {
+  margin-bottom: 122px;
+  margin-top: -5px;
+  padding-top: 122px;
+  margin-left: auto;
+  margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  p {
+    font-size: 32px;
+    font-family: "snellfont";
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+  }
+}
 
 .lesson {
   margin-top: -5px;
@@ -434,7 +457,7 @@ input {
   background-size: cover;
 
   p {
-    font-size: 40px;
+    font-size: 32px;
     font-family: "snellfont";
     margin-left: auto;
     margin-right: auto;
