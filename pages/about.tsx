@@ -19,18 +19,19 @@ export interface Info {
 
 export default function Profile(abouts: Profile) {
   return (
-    <div >
+    <div className={styles.profile_section}>
       {abouts.Profile_jp.map((about: any) => {
         return (
           <>
+          <div className={styles.profile_section}>
           <div className={styles.linebox}>
             <div className={styles.namebox}>
               <div className={styles.jpimage}>
                 <Image
-                  src={about.profile_photo2.url}
+                  src={about.profile_photo3.url}
                   alt=""
-                  width={`${300}`}
-                  height={400}
+                  width={`${246}`}
+                  height={294}
                 />
               </div>
               <div className={styles.nametitle}>
@@ -46,16 +47,22 @@ export default function Profile(abouts: Profile) {
                 </div>
               </div>
             </div>
-            </div>  
+            </div>
+            <div className={styles.profile_deco}>
+                <Image
+                  src={about.blue_deco.url}
+                  alt=""
+                  width={`${83}`}
+                  height={30}
+                />
+                </div>
             <div className={styles.aboutjp}>
               <p>{about.profile_jp}</p>
             </div>
+            </div> 
           </>
         );
       })}
-         <Image src={Sakura} alt=""
-     id="london"
-      />
     </div>
   );
 }
