@@ -10,12 +10,12 @@ export default  function Footer(){
     <div className="container">
       <div className="row">
         <div className="col-sm-12 col-md-6">
-          <h6>Riho Akagi</h6>
-          <p className="text-justify">Riho is a japanese London based <i>PIANIST.</i></p>
+          <div className="footer_name_a"><p>Pianist</p></div>
+          <div className="footer_name_b"><h6>Riho Akagi</h6></div>
         </div>
 
         <div className="col-xs-6 col-md-3">
-          <h6>SITE MENU</h6>
+          {/* <h6>SITE MENU</h6> */}
           <ul className="footer-links">
             <li> <Link href={`/`}>Home</Link></li>
             <li> <Link href={`/about`}>About JP</Link></li>
@@ -25,7 +25,7 @@ export default  function Footer(){
         </div>
 
         <div className="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
+          {/* <h6>Quick Links</h6> */}
           <ul className="footer-links">
             <li><a href="https://www.youtube.com/user/RihoLynne">YouTube</a></li>
             <li><a href="https://soundcloud.com/riho-akagi">SoundCloud</a></li>
