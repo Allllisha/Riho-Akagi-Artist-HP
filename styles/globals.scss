@@ -14,6 +14,8 @@ a {
 }
 
 
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@700&family=Nanum+Gothic:wght@400;700&family=Noto+Sans+JP:wght@500&family=Noto+Serif+JP&display=swap');
 
 @font-face {
@@ -218,11 +220,12 @@ a {
 .alllinks{
 
   a{
+    font-family: 'Playfair Display', serif;
     color: black;
   }
 
   a:hover{
-   color: turquoise;
+   color: #878787
   }
   
   margin-top: 20px;
@@ -614,6 +617,7 @@ h6:hover{
 
 .footer-links {
   margin-top: 50px;
+  font-family: 'Playfair Display', serif;
   @media screen and (max-width: 767px){
   margin-top: 0px;
   }
@@ -666,7 +670,8 @@ h6:hover{
 }
 .copyright-text
 {
-  margin:0
+  margin:0;
+  font-family: 'Playfair Display', serif;
 }
 @media (max-width:991px)
 {

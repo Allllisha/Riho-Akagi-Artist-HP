@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500&display=swap');
 
 .main_container {
-  height: 627px;
+
 }
 
 .main {
@@ -175,43 +176,7 @@
 
 
 
-// .hero .boxString {
-//   position: absolute;
-//   display: inline-block;
-//   padding: 1000px;
-//   color: #fff;
-//   top: 50%; 
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-//   z-index: 11;
 
-//   h1 {
-//     font-family: "snellfont";
-//     font-size: 40px;
-//   }
-
-//   .indexName {
-//     text-align: center;
-//     margin-top: 100px;
-
-//     h3 {
-//       font-family: "snellfont";
-//     }
-
-//     img{
-//       object-fit: cover;
-//       width: 100%;
-//     }
-//   }
-
-//   .firstname {
-//     margin-right: 8px;
-//   }
-
-//   .lastname {
-//     margin-left: 8px;
-//   }
-// }
 
 .indexAllName {
   display: flex;
@@ -446,3 +411,86 @@ input {
 
 }
 
+
+
+.lesson {
+  margin-top: -5px;
+  padding-top: 122px;
+  margin-left: auto;
+  margin-right: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../public/lesson_bg.png");
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+  p {
+    font-size: 40px;
+    font-family: "snellfont";
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: lighter;
+  }
+
+  img {
+   margin-left: auto;
+   margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lesson_explain_a {
+    max-width: 506px;
+    margin-top: 78px;
+    p {
+      font-weight: 300;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+    }
+  }
+
+  .lesson_explain_b {
+    min-width: 506px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    p {
+      font-weight: 300;
+      font-family: 'Noto Sans JP', sans-serif;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+
+  .lesson_explain_c {
+    min-width: 506px;
+    margin-bottom: 30px;
+    p {
+      font-weight: 300;
+      font-family: 'Noto Sans JP', sans-serif;
+      text-align: left;
+      font-size: 16px;
+    }
+  }
+
+  .lesson_explain_d {
+    max-width: 506px;
+    margin-bottom: 30px;
+    p {
+      font-weight: 300;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 16px;
+    }
+    margin-bottom: 259px;
+  }
+
+}

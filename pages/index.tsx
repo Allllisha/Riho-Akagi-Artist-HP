@@ -2,6 +2,7 @@ import Head from "next/head";
 import Arrow from "../public/arrow.png";
 import TOP from "../public/home_top.png";
 import Riho from "../public/riho.jpg";
+import RED from "../public/reddeco.png";
 import Flower from "../public/1.png";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
@@ -53,27 +54,31 @@ export default function Home(blogs) {
            />
         </div>
       </div>
-      {/* <div className={styles.welcome} id="concept">
-        <div className={styles.introduction}>
-          <h1>About</h1>
-          <h6>My introduction</h6>
-          <div className={styles.allabout}>
-              <Image src={Riho} alt="" />
-            <div className={styles.allintro}>
-              <p>
-                Hello! Welcome and Thank you very much for stopping by
-                my hp! I think you already know about my musical life. In this
-                page, I would like to share my hobbies, interests and lifestyle
-                about myself...I have been living in London since 2017. I have
-                been thinking more about myself in the last few years and that
-                was a big theme. I would like to write down someday.and how I
-                did change a life....anyway hope you enjoy this hp!! Have a lovely
-                day !! Aloha!☀️ 
-              </p>
-            </div>
+
+          <div className={styles.lesson}>
+            <p>Lesson</p>
+            <Image src={RED} 
+          alt=""
+           />
+          <div className={styles.lesson_explain_a}>
+           <p>年齢問わず、子供から大人までピアノを弾くことは楽しい！面白い！そんな経験をしてみませんか？ロンドンで学んだ私のピアノ音楽を、皆さん一人一人の個性を見つけ活かしながら、楽しく元気にレッスンをすすめていきます。一緒に素敵な音楽をつくっていきましょう！詳しくは Contact へお気軽にお問い合わせください。お待ちしてます！</p>
+           </div>
+           <div className={styles.lesson_explain_b}>
+            <p>受講対象者</p>
+            <p>・キーボードまたはピアノが家にある方</p>
+            <p>・ピアノが弾ける環境がある方</p>
+           </div>
+           <div className={styles.lesson_explain_c}>
+            <p>内容</p>
+            <p>プライベートレッスン、オンラインレッスン★、</p>
+            <p>アドバイスレッスン、コンサート、伴奏録音、伴奏依頼、現地留学等</p>
           </div>
-        </div>
-      </div> */}
+          <div className={styles.lesson_explain_d}>
+            <p>★オンラインレッスンを希望させる方は日本語、英語どちらでも可能です。現地ロンドンから、または帰国中は静岡県から接続します。</p>
+          </div>
+
+          </div>
+
 
       {/* <div className={styles.slantbg}>
         <div className={styles.news}>
