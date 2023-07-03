@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Arrow from "../public/arrow.png";
+import TOP from "../public/home_top.png";
 import Riho from "../public/riho.jpg";
 import Flower from "../public/1.png";
 import Image from "next/image";
@@ -15,7 +16,7 @@ import { Link as Scroll } from "react-scroll";
 
 export default function Home(blogs) {
   return (
-    <>
+    <div className={styles.main_container}>
       <div className={styles.container}>
         <Head>
           <title>Pianist Riho Akagi Homepage</title>
@@ -23,7 +24,7 @@ export default function Home(blogs) {
           <link rel="icon" href="/favicon.ico" />
         </Head>
         <div className={styles.hero}>
-          <div className={styles.slider}>
+          {/* <div className={styles.slider}>
             <div className={styles.image}></div>
             <div className={styles.image}></div>
             <div className={styles.image}></div>
@@ -46,10 +47,13 @@ export default function Home(blogs) {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+          <Image src={TOP} 
+          alt=""
+           />
         </div>
       </div>
-      <div className={styles.welcome} id="concept">
+      {/* <div className={styles.welcome} id="concept">
         <div className={styles.introduction}>
           <h1>About</h1>
           <h6>My introduction</h6>
@@ -69,8 +73,9 @@ export default function Home(blogs) {
             </div>
           </div>
         </div>
-      </div>
-      <div className={styles.slantbg}>
+      </div> */}
+
+      {/* <div className={styles.slantbg}>
         <div className={styles.news}>
           <h1>News</h1>
           <h6>concert info</h6>
@@ -84,12 +89,14 @@ export default function Home(blogs) {
                     <Link href={`/blogs/${blog.id}`}>{blog.title}</Link>
                   </div>
                 </div>
+                
               );
             })}
           </div>
         </div>
-      </div>
-      <div className={styles.contactContainer}>
+      </div> */}
+
+      {/* <div className={styles.contactContainer}>
         <div className={styles.contact}>
           <h1>Contact</h1>
           <h6>Lesson / Enquiry</h6>
@@ -139,9 +146,8 @@ export default function Home(blogs) {
             </Form>
           </div>
         </div>
-      </div>
-      <Image src={Flower} alt="" />
-    </>
+      </div> */}
+    </div>
   );
 }
 
