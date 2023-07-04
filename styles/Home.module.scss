@@ -499,10 +499,11 @@ input {
   }
 
   .lesson_explain_b {
-    // min-width: 506px;
+    width: 506px;
     margin-top: 30px;
     margin-bottom: 30px;
     p {
+      margin-left: -40px;
       font-weight: 300;
       font-family: 'Noto Sans JP', sans-serif;
       text-align: left;
@@ -510,6 +511,7 @@ input {
     }
 
     @media screen and (max-width: 767px) {
+      margin-left: 200px;
       min-width: none;
       p {
 
@@ -546,17 +548,30 @@ input {
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 16px;
     }
-    margin-bottom: 259px;
+    margin-bottom: 220px;
   }
 
   @media screen and (max-width: 767px) {
-    margin-bottom: none;
     p {
       font-size: 25px;
       margin-left: auto;
       margin-right: auto;
       max-width: 300px;
     }
+    margin-bottom: 0px;
   }
 
+}
+
+.hero {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.hero2 {
+  display: none;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
 }

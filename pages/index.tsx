@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Arrow from "../public/arrow.png";
 import TOP from "../public/home_top.png";
+import TOP2 from "../public/home_top2.png";
 import Riho from "../public/riho.jpg";
 import RED from "../public/reddeco.png";
 import BLACK from "../public/blackdeco.png";
@@ -27,6 +28,11 @@ export default function Home(upcommings) {
         </Head>
         <div className={styles.hero}>
           <Image src={TOP} 
+          alt=""
+           />
+        </div>
+        <div className={styles.hero2}>
+          <Image src={TOP2} 
           alt=""
            />
         </div>
