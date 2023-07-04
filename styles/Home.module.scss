@@ -436,6 +436,7 @@ input {
   }
 
   @media screen and (max-width: 767px) {
+    width: 100%;
     padding-top: 68px;
     margin-bottom: 69px;
     p {
@@ -511,7 +512,7 @@ input {
     }
 
     @media screen and (max-width: 767px) {
-      margin-left: 200px;
+      max-width: 300px;
       min-width: none;
       p {
 
@@ -564,6 +565,7 @@ input {
 }
 
 .hero {
+  display: block;
   @media screen and (max-width: 767px) {
     display: none;
   }
