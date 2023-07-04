@@ -631,7 +631,7 @@ h6:hover{
     margin-top: 0px!important;
     margin-left: 5px!important;
     p {
-      margin-left: 5px!important
+      margin-left: 5px!important;
     }
     }
   }
@@ -836,6 +836,200 @@ h2 {
   font-size: 32px;
   margin-top: 5px;
   padding-bottom: 3px;
+}
+}
+
+
+.ContactContainer {
+  background-image: url("../public/background_contact.png");
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+
+}
+
+.ContactTop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+
+  h2 {
+    font-size: 32px;
+    font-family: "snellfont";
+  }
+
+  
+}
+
+
+.ContactForm {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 150px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.ContactName {
+  margin-bottom: 10px;
+  label {
+    margin-right: 45px;
+    margin-bottom: 5px;
+    font-family: "Playfair Display", serif;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      margin-right: 0px;
+      font-family: "Playfair Display", serif;
+    }
+  }
+}
+
+.ContactEmail {
+  margin-bottom: 30px;
+  label {
+    margin-right: 45px;
+    font-family: "Playfair Display", serif;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      margin-right: 0px;
+      font-family: "Playfair Display", serif;
+    }
+  }
+  
+}
+
+.ContactMessage {
+  margin-bottom: 10px;
+  margin-left: 85px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: 0px;
+  }
+}
+
+input {
+  width:380px;
+  border: #000000 1px solid;
+  height: 35px;
+  font-size: 17px;
+  p {
+    font-size: 17px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width:300px;
+  }
+}
+
+textarea {
+  width:380px;
+  border: #282626 1px solid;
+  // margin-left: 87px;
+  height: 300px;
+  font-size: 16px; 
+
+  @media screen and (max-width: 767px) {
+    padding-left: auto;
+    max-width:300px;
+  }
+}
+
+
+
+.ContactButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  border: none;
+  width: 120px;
+  height:30px;
+  padding: none;
+  background-color: white;
+  
+    a {
+      font-family: "Playfair Display", serif;
+      color: white;
+      background-color: #262626;
+      width: 120px;
+      height:30px;
+      border-radius: 5px;
+      text-decoration: none;
+      p {
+        margin-top: 5px!important;
+      }
+    }
+
+    a:hover {
+      text-decoration: none;
+      background-color: #007bb6;
+      color: white;
+    }
+
+    @media screen and (max-width: 767px) {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0px;
+      border: none;
+      width: 120px;
+      height:30px;
+      padding: none;
+      background-color: white;
+      
+        a {
+          font-family: "Playfair Display", serif;
+          color: white;
+          background-color: #262626;
+          width: 120px;
+          height:30px;
+          border-radius: 5px;
+          text-decoration: none;
+          p {
+            margin-top: 5px!important;
+          }
+        }
+      a:hover {
+        text-decoration: none;
+        background-color: #007bb6;
+        color: white;
+      }
+    }
 }
 }
 
