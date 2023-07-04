@@ -460,16 +460,17 @@ h6:hover{
   margin-top: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom:  50px;
   justify-content: center;
   align-items: flex-start;
+  padding-bottom: 500px;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  
+    padding-bottom: 50px;
   }
 }
 
@@ -791,17 +792,26 @@ h6:hover{
 
 .bg-news{
   padding-top: 122px;
-  background-image: url("../public/background.png");
-  background-repeat: repeat;
+  background-image: url("../public/background_gallary.png");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  object-fit: cover;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 
   @media screen and (max-width: 767px) {
     background-image: url("../public/background.png");
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
-    background-color: rgb(49, 48, 48);
+    object-fit: contain;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
   }
 }
 
@@ -979,7 +989,7 @@ button {
   width: 120px;
   height:30px;
   padding: none;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
   
     a {
       font-family: "Playfair Display", serif;
@@ -1010,7 +1020,7 @@ button {
       width: 120px;
       height:30px;
       padding: none;
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0);
       
         a {
           font-family: "Playfair Display", serif;
