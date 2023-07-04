@@ -347,6 +347,8 @@ a {
     align-items: center;
     margin-left: 20px;
     margin-right: 20px;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 }
 
@@ -428,12 +430,12 @@ a {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  font-size: 30px;
-  font-family: 'snellfont';
+  font-size: 20px;
+  font-family: "Playfair Display", serif;
   color: black;
 
 h6:hover{
-  color: #262626;
+  color: #737373;
 }  
 
   @media screen and (max-width: 767px) {
@@ -611,7 +613,8 @@ h6:hover{
 
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    margin-left: 5px;
    }
   }
 }
@@ -625,7 +628,11 @@ h6:hover{
 
 
   @media screen and (max-width: 767px) {
-    margin-top: 0px;
+    margin-top: 0px!important;
+    margin-left: 5px!important;
+    p {
+      margin-left: 5px!important
+    }
     }
   }
 }
@@ -636,6 +643,7 @@ h6:hover{
   font-family: 'Playfair Display', serif;
   @media screen and (max-width: 767px){
   margin-top: 0px;
+  margin-left: 5px;
   }
 }
 
