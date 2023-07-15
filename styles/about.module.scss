@@ -46,6 +46,35 @@
   }
 }
 
+.aboutZayuu{
+  font-family: 'Noto Serif JP', serif;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 0px;
+  margin-top: 30px;
+ 
+
+  @media screen and (max-width: 767px) { 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+  }
+}
+
+.aboutSukinakoto{
+  font-family: 'Noto Serif JP', serif;
+  margin-left: 300px;
+  margin-right: 300px;
+  margin-bottom: 100px;
+  margin-top: 30px;
+ 
+
+  @media screen and (max-width: 767px) { 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 100px;
+  }
+}
 
 
 .namebox {

@@ -48,7 +48,7 @@ export default  function Footer(){
             <li><a className="facebook" href="https://www.facebook.com/rihomusic/"><GrFacebook /></a></li>
             <li><a className="twitter" href="https://twitter.com/23Riho"><i className="fa fa-twitter"><GrTwitter /></i></a></li>
             <li><a className="dribbble" href="https://www.instagram.com/riho_akagi/"><i className="fa fa-dribbble"><GrInstagram /></i></a></li>
-            <li><a className="linkedin" href="https://www.instagram.com/riho_akagi/"><i className="fa fa-linkedin"><GrLinkedin/></i></a></li>
+            <li><a className="linkedin" href="https://www.linkedin.com/in/riho-akagi-51a9ab132"><i className="fa fa-linkedin"><GrLinkedin/></i></a></li>
           </ul>
         </div>
       </div>

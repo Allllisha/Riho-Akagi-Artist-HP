@@ -500,6 +500,7 @@ input {
 
     @media screen and (max-width: 767px) {
       max-width: 300px;
+      text-align: center;
     }
   }
 
@@ -528,7 +529,7 @@ input {
   }
 
   .lesson_explain_c {
-    // min-width: 506px;
+    max-width: 506px;
     margin-bottom: 30px;
     p {
       font-weight: 300;
@@ -553,7 +554,17 @@ input {
       font-family: 'Noto Sans JP', sans-serif;
       font-size: 16px;
     }
-    margin-bottom: 220px;
+    margin-bottom: 110px;
+
+
+    @media screen and (max-width: 767px) {
+      p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+      }
+      margin-bottom: 120px;
+    }
   }
 
   @media screen and (max-width: 767px) {
@@ -567,6 +578,238 @@ input {
   }
 
 }
+
+.lesson_explain_e {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.lesson_explain_f {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+
+
+.lesson_explain_g {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  a {
+    color: blueviolet;
+  }
+
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+
+.lesson_explain_h {
+  margin-top: 30px a {
+    color: blueviolet;
+  }
+
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 323px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+
+.lesson_explain_I {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.lesson_explain_J {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 323px;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+}
+
+.lesson_explain_K {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.lesson_explain_L {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.lesson_explain_N {
+  max-width: 506px;
+  margin-bottom: 30px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+  }
+}
+
+.lesson_explain_M {
+  max-width: 506px;
+  margin-bottom: 220px;
+  p {
+    font-weight: 300;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 300px;
+      text-align: center;
+    }
+    margin-bottom: 120px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hero {
   display: block;

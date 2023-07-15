@@ -69,12 +69,38 @@ export default function Home(upcommings) {
            <div className={styles.lesson_explain_c}>
             <p>内容</p>
             <p>プライベートレッスン、オンラインレッスン★、</p>
-            <p>アドバイスレッスン、コンサート、伴奏録音、伴奏依頼、現地留学等</p>
+            <p>アドバイスレッスン、コンサート、伴奏録音、伴奏依頼、留学等</p>
           </div>
           <div className={styles.lesson_explain_d}>
             <p>★オンラインレッスンを希望させる方は日本語、英語どちらでも可能です。現地ロンドンから、または帰国中は静岡県から接続します。</p>
           </div>
-
+          <div className={styles.lesson_explain_e}>
+            <p>The piano is fun for all ages! From children to adults, anyone can enjoy playing the piano! Why not experience the joy of playing the piano for yourself?</p>
+          </div>
+          <div className={styles.lesson_explain_f}>
+            <p>I teach piano in a fun and lively way using the methods I have learnt in London and Japan while finding and catering my lessons to each student’s individuality. Let’s make wonderful music together!</p>
+          </div>
+          <div className={styles.lesson_explain_g}>
+            <p>For further information, please feel free to <Link href={`/contact`}>contact</Link> me. I look forward to hearing from you!</p>
+          </div>
+          <div className={styles.lesson_explain_h}>
+            <p>〈Who would these lessons be good for?〉</p>
+          </div>
+          <div className={styles.lesson_explain_I}>
+            <p>Those who have an electric keyboard, piano at home, or somewhere they can play a piano.</p>
+          </div>
+          <div className={styles.lesson_explain_J}>
+            <p>〈Types of Lessons and Services Offered〉</p>
+          </div>
+          <div className={styles.lesson_explain_K}>
+            <p>Private Lessons, Theory, Online Lessons(★), Advisory Lessons, Concerts, Accompaniment Recording, Collaborative/Accompaniment Commission, Study Abroad Consultation etc.</p>
+          </div>
+          <div className={styles.lesson_explain_L}>
+            <p>(★) For those interested in online lessons, they can be taught in either Japanese or English. Lessons will be conducted from London, UK or Shizuoka, Japan.</p>
+          </div>
+          <div className={styles.lesson_explain_M}>
+            <p>Each lesson is personalized according to the level of the student, from beginner to professional, and taught in my own style while also incorporating ABRSM and Japanese methodologies.</p>
+          </div>
           </div> 
     </div>
   );

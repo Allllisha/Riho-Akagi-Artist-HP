@@ -59,6 +59,12 @@ export default function Profile(abouts: Profile) {
             <div className={styles.aboutjp}>
               <p>{about.profile_jp}</p>
             </div>
+            <div className={styles.aboutZayuu}>
+              <p>{about.zayuu}</p>
+            </div>
+            <div className={styles.aboutSukinakoto}>
+              <p>{about.sukinakoto}</p>
+            </div>
             </div> 
           </>
         );
