@@ -39,7 +39,7 @@ export default function BlogId({ upcomming }) {
       </div>
     <div className="backToHome">
     <Link href={`/upcommings/`}>
-     <h6>Back to Gallary</h6>
+     <h6>Back to Gallery</h6>
      </Link>
 
 

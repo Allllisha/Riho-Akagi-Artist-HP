@@ -34,7 +34,7 @@ export default function Home(upcommings) {
       </div>
 
       <div className={styles.upcomming}>
-      <p>Upcomming</p>
+      <p>Upcoming</p>
             <Image src={BLACK} 
           alt=""
            />

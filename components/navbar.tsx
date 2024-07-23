@@ -33,7 +33,7 @@ const drawerItem = [
   { label: 'Home', path: '/' },
   { label: 'About JP', path: '/about' },
   { label: 'About EN', path: 'abouts/h37pyymxj' },
-  { label: 'Gallary', path: '/upcommings' },
+  { label: 'Gallery', path: '/upcomings' },
   { label: 'Contact', path: '/contact' },
 ];
 

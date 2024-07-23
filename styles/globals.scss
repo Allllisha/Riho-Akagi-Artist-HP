@@ -450,6 +450,7 @@ a {
   font-size: 20px;
   font-family: "Playfair Display", serif;
   color: black;
+  margin-bottom: 30px;
 
 h6:hover{
   color: #737373;
@@ -462,6 +463,7 @@ h6:hover{
     margin-left: 20px;
     margin-right: 20px;
     color: #262626;
+    margin-bottom: 10px;
   }
 }
 
@@ -523,6 +525,10 @@ h6:hover{
 }
 .sample1:hover .mask {
 	opacity:		1;	
+}
+
+.sample1 img {
+  object-fit: cover;
 }
 
 #btn-red {
@@ -954,7 +960,7 @@ h2 {
 }
 
 .ContactMessage {
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   margin-left: 85px;
 
   @media screen and (max-width: 767px) {

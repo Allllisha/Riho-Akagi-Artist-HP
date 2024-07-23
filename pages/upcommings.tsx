@@ -8,7 +8,7 @@ import RED from "../public/reddeco.png";
 export default function AllBlogs(upcommings) {
   return (
     <div className="bg-news">
-      <div className="gallery__top"><h2>Gallary</h2>
+      <div className="gallery__top"><h2>Gallery</h2>
       <Image src={RED} 
           alt=""
            />
